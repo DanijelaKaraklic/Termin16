@@ -16,7 +16,7 @@ public class Sastojak {
         this.id = id;
         this.naziv = naziv;
         this.kolicina = kolicina;
-        this.jelo = jelo;
+
     }
 
    /* public Sastojak(int id, String naziv, float kolicina) {

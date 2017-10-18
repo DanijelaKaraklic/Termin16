@@ -15,9 +15,11 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import rs.aleph.android.example12.R;
+import rs.aleph.android.example12.model.Sastojak;
 import rs.aleph.android.example12.providers.CategoryProvider;
 import rs.aleph.android.example12.providers.JeloProvider;
 import rs.aleph.android.example12.providers.SastojakProvider;
@@ -92,16 +94,16 @@ public class SecondActivity extends Activity {
         float r = JeloProvider.getJeloById(position).getOcena();
         rbOcena.setRating(r);
 
-        final List<String> sastojciNaziv = SastojakProvider.getSastojciNaziv();
+        List<Sastojak> sastojci = JeloProvider.getJeloById(position).getSastojci();
+        List<String> sastojciNaziv = new ArrayList<>();
+        for (Sastojak sastojak:sastojci){
+            sastojciNaziv.add(sastojak.toString());
+        }
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, R.layout.list_item,sastojciNaziv);
         ListView lvSastojci = (ListView)findViewById(R.id.listOfSastojak);
         lvSastojci.setAdapter(dataAdapter);
-        for (int i=0;i<JeloProvider.getJeloById(position).getSastojci().size();i++){
-            lvSastojci.setSelection(JeloProvider.getJeloById(position).getSastojci().get(i).getId());
-        }
-       /* for(int i=0;i<JeloProvider.getJeloById(position).getSastojci().size();i++) {
-            lvSastojci.setSelection(JeloProvider.getJeloById(position).getSastojci().get(i).getId());
-        }*/
+
+
 
 
 
