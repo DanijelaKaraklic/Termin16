@@ -7,6 +7,8 @@
     <string name="third_activity_name">Third Activity</string>
     <string name="starting_activity">Start an Activity</string>
     <string name="opening_activity">Open Web Browser</string>
+    <string name="naziv_jela">Name of meal</string>
+
 
     <string name="detail_heading">Web Page Detail</string>
     <string name="list_heading">Web Page Listing</string>
