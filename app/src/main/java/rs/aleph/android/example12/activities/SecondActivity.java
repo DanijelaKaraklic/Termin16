@@ -22,7 +22,6 @@ import rs.aleph.android.example12.R;
 import rs.aleph.android.example12.model.Sastojak;
 import rs.aleph.android.example12.providers.CategoryProvider;
 import rs.aleph.android.example12.providers.JeloProvider;
-import rs.aleph.android.example12.providers.SastojakProvider;
 
 // Each activity extends Activity class
 public class SecondActivity extends Activity {
@@ -44,7 +43,7 @@ public class SecondActivity extends Activity {
         // Each lifecycle method should call the method it overrides
         super.onCreate(savedInstanceState);
         // setContentView method draws UI
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_second_relative);
 
 
         // Shows a toast message (a pop-up message)

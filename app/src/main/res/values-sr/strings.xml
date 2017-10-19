@@ -8,6 +8,9 @@
     <string name="starting_activity">Започни активност</string>
     <string name="opening_activity">Отварање веб претраживача</string>
     <string name="naziv_jela">Назив јела</string>
+    <string name="description">Опис јела</string>
+    <string name="cena">Цена</string>
+    <string name="cal">Калорије</string>
 
     <string name="detail_heading">Детаљи веб стране</string>
     <string name="list_heading">Списак веб страна</string>
